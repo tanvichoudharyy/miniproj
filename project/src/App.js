@@ -22,7 +22,6 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          <Route path="/settings" element={<Settings />} />
         </Routes>
       </Router>
     </ThemeProvider>
