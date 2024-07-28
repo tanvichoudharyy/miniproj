@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Typography, Grid } from '@mui/material';
-import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
 const data = [
   { name: 'Jan', uv: 400, pv: 2400, amt: 2400 },
