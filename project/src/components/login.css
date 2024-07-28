@@ -1,0 +1,53 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+    font-size: medium;
+    background-color: rgb(209, 215, 209);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .form-group{
+    margin-bottom: 25px;
+}
+
+     label{
+    display: block;
+    margin-bottom: 5px;
+    color: #847cfb;
+    }
+   
+
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #847cfb;
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+    cursor:pointer;
+  }
+  button:hover {
+    background-color: #030211;
+  }
+
+  p{
+   padding: 10px;
+   font-size: medium;
+   font-family: 'Times New Roman', Times, serif;
+   color: #847cfb;
+   line-height: 1.5;
+   text-align: center;
+   margin: 10px;
+   border: 3px solid #847cfb;
+  }
