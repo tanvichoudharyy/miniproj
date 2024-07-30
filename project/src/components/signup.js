@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Signup from "./common/Signup";
 
 const Signup = () => {
   const handleSubmit = (event) => {
