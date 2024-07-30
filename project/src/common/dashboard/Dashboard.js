@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Typography, Grid } from '@mui/material';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import './Dashboard.css';  // Importing the CSS file
 
 const data = [
   { name: 'Jan', uv: 400, pv: 2400, amt: 2400 },
@@ -14,23 +15,27 @@ const data = [
 
 function Dashboard() {
   return (
-    <Container>
-      <Typography variant="h3" gutterBottom>
+    <Container className="dashboard-container">
+      <Typography variant="h3" gutterBottom className="dashboard-title">
         Dashboard
       </Typography>
       <Grid container spacing={3}>
         <Grid item xs={12} md={6}>
           <Typography variant="h6">Line Chart</Typography>
-          <LineChart width={600} height={300} data={data}>
-            <Line type="monotone" dataKey="uv" stroke="#8884d8" />
-            <CartesianGrid stroke="#ccc" />
-            <XAxis dataKey="name" />
-            <YAxis />
-            <Tooltip />
-          </LineChart>
+          <div className="chart-container">
+            <LineChart width="100%" height={300} data={data}>
+              <Line type="monotone" dataKey="uv" stroke="#8884d8" />
+              <CartesianGrid stroke="#ccc" />
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip />
+              <Legend />
+            </LineChart>
+          </div>
         </Grid>
         <Grid item xs={12} md={6}>
           <Typography variant="h6">Bar Chart</Typography>
+          {/* Implement the Bar Chart here */}
         </Grid>
       </Grid>
     </Container>

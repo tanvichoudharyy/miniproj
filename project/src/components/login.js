@@ -1,39 +1,51 @@
-import { Link } from "react-router-dom";
-import React from "react";
-import './common/Login.css';
+import React, { useState} from "react";
+import { useNavigate } from "react-router-dom";
+import '../common/Login.css';
  
 //alert
 
-const LoginForm=()=>{
-const handleSubmit = (event) => {
-event.preventDefault();//This line stops the default form submission behavior
-alert("Login form submitted successfully!");
-};
-return(
-    <>
+const Login = () => {
+    const navigate = useNavigate();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
     
+    const handleSubmit = (event) => {
+    event.preventDefault();
+    navigate('/dashboard');
+    };
+    
+return (
+    <div className="main">
+    <h2>Login</h2>
     <form onSubmit={handleSubmit}>
-        {/* Ye ek event handler attribute hai. Jab form submit hoga, tab handleSubmit naam ka JavaScript function call hoga. */}
-       
-       <div className="form-group"> 
-        <label type="email">Email</label>
-        <input type="email" id="email" name="email" required />
+        <div className="form-group">
+            <label htmlFor="email">Email:</label>
+            <input
+            type="email"
+            id="email"
+            name="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required/>
         </div>
-
-        <div>
-            <label type="password">Password</label>
-            <input type="password"id="password" name="password" required/>
+        <div className="form-group">
+            <label htmlFor="password">Password:</label>
+            <input
+            type="password"
+            id="password"
+            name="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required/>
         </div>
-          <br></br>
         <button type="submit">Login</button>
-
     </form>
-
-    <div>
-        <p>Kya aapka account nhi h ?<Link to="/signup">Yahan bnaiye</Link></p>
+        
+        <div>
+            <p>Don't have an account? <Link to="/Signup">Sign Up</Link></p>
+        </div>
     </div>
-
-    </>
-);
+ );
 };
-export default LoginForm;
+    
+export default Login;

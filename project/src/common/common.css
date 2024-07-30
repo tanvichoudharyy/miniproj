@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef; /* Slightly lighter background for better contrast */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .main {
+    background-color: #ffffff;
+    border-radius: 20px; /* More rounded corners for a modern look */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2); /* Slightly larger shadow for better prominence */
+    padding: 25px; /* Increased padding for better spacing */
+    width: 320px; /* Slightly wider form */
+  }
+  
+  h2 {
+    color: #28a745; /* Slightly darker green for better contrast */
+    margin-bottom: 25px; /* Increased margin for better spacing */
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* Increased margin for better spacing */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px; /* Increased margin for better spacing */
+    color: #333; /* Darker text color for better readability */
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    width: 100%;
+    padding: 12px; /* Increased padding for better usability */
+    box-sizing: border-box;
+    border: 1px solid #ced4da; /* Slightly darker border for better contrast */
+    border-radius: 8px; /* More rounded corners for a modern look */
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  select:focus {
+    border-color: #28a745; /* Match the heading color for consistency */
+  }
+  
+  button[type="submit"] {
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners for consistency */
+    border: none;
+    background-color: #28a745; /* Slightly darker green for better contrast */
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #218838; /* Slightly darker hover color for better contrast */
+  }

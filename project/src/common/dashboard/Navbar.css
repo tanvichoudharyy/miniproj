@@ -1,0 +1,24 @@
+.navbar {
+    padding: 0 20px;
+  }
+  
+  .navbar-title {
+    flex-grow: 1;
+  }
+  
+  .navbar-search {
+    margin: 0 20px;
+  }
+  
+  .navbar-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-buttons .MuiButton-root {
+    margin-left: 10px;
+  }
+  
+  .navbar-icon {
+    margin-right: 8px;
+  }  
