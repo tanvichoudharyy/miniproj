@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Signup from "./common/Signup";
 
-const Signup = () => {
+const SignupPage = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     alert("Signup form submitted successfully!");
@@ -24,4 +23,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default SignupPage;

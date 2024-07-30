@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Typography, Grid } from '@mui/material';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
-import './Dashboard.css';  // Importing the CSS file
+import './Dashboard.css';
 
 const data = [
   { name: 'Jan', uv: 400, pv: 2400, amt: 2400 },
@@ -13,7 +13,7 @@ const data = [
   { name: 'Jul', uv: 349, pv: 4300, amt: 2100 },
 ];
 
-function Dashboard() {
+const Dashboard = () => {
   return (
     <Container className="dashboard-container">
       <Typography variant="h3" gutterBottom className="dashboard-title">
@@ -35,7 +35,6 @@ function Dashboard() {
         </Grid>
         <Grid item xs={12} md={6}>
           <Typography variant="h6">Bar Chart</Typography>
-          {/* Implement the Bar Chart here */}
         </Grid>
       </Grid>
     </Container>
